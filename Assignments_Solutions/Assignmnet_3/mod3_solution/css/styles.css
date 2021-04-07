@@ -1,0 +1,136 @@
+*{
+  box-sizing: border-box;
+} 
+
+body {
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1{
+  font-family: cursive;
+  font-style: bold;
+}
+
+h3{
+  font-weight: bold;
+}
+
+#header-nav {
+  background-color: #999999;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  color: black;
+  font-family: cursive;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75; 
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background: #f8adad;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -65px;
+}
+
+@media (min-width: 992px)  {
+  div>ul>li{
+    visibility: hidden;
+  }
+  .container{
+    margin: 0% 0% 0% 3%;
+    width: auto;
+  }
+  .col-md-4{
+    float: left;
+    background-color: #999999;
+    margin-right: 2%;
+    padding-bottom: 15px;
+  }
+  .col-md-4{
+      width: 31%;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  div>ul>li{
+    visibility: hidden;
+  }
+  .container{
+    margin: 0% 3%;
+    width: auto;
+  }
+  .col-sm-6{
+    float: left;
+    border: 1px solid black;
+    background-color: #999999;
+    margin: 2% 2.5% 1% 0%;
+    padding-bottom: 15px;
+  }
+  .col-sm-6{
+    width: 48.6%;
+  }
+  #Beef{
+      margin: 2% 0% 1% 0%;
+  }
+  #Sushi{
+      width: 100%;
+  }
+}
+
+/********** (Mobile) Extra small devices only **********/
+@media (max-width: 767px) {
+
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  
+  #collapsable-nav a { 
+    font-size: 1.2em;
+  }
+  .container{
+    margin: 0% 3%;
+  }
+  .col-xs-12{
+    float: left;
+    margin: 2.5% 0%;
+    background-color: #999999;
+    padding-bottom: 15px; 
+  }
+  
+}
